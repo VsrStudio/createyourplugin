@@ -30,3 +30,25 @@ input[type="submit"]:hover {
 label {
     font-weight: bold;
 }
+
+/* Styling untuk Footer */
+footer {
+    text-align: center;
+    margin-top: 40px;
+}
+
+footer p {
+    font-size: 14px;
+    color: #333;
+}
+
+footer a {
+    color: #7289da; /* Warna Discord */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer a:hover {
+    color: #99aab5; /* Warna saat hover */
+    text-decoration: underline;
+}
