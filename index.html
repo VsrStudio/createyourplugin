@@ -4,35 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PocketMine Plugin Creator</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 40px;
-        }
-        form {
-            max-width: 600px;
-            margin: auto;
-        }
-        input, textarea, select {
-            width: 100%;
-            padding: 10px;
-            margin: 10px 0;
-            border: 1px solid #ddd;
-            border-radius: 5px;
-        }
-        input[type="submit"] {
-            background-color: #4CAF50;
-            color: white;
-            border: none;
-            cursor: pointer;
-        }
-        input[type="submit"]:hover {
-            background-color: #45a049;
-        }
-        label {
-            font-weight: bold;
-        }
-    </style>
+    <link rel="stylesheet" href="assets/style.css">
 </head>
 <body>
     <h1>PocketMine Plugin Creator</h1>
@@ -53,26 +25,8 @@
             <option value="3.0.0">3.0.0</option>
         </select>
 
-        <label for="namespace">Namespace (Opsional):</label>
-        <input type="text" id="namespace" name="namespace">
-
         <label for="description">Deskripsi Plugin:</label>
         <textarea id="description" name="description" rows="4" required></textarea>
-
-        <label for="commands">Commands (format: nama - deskripsi, pisahkan dengan baris baru):</label>
-        <textarea id="commands" name="commands" rows="4"></textarea>
-
-        <label for="dependencies">Dependencies (pisahkan dengan koma):</label>
-        <input type="text" id="dependencies" name="dependencies">
-
-        <label for="events">Event Listener:</label>
-        <select id="events" name="events[]" multiple>
-            <option value="pocketmine\\event\\player\\PlayerJoinEvent">PlayerJoinEvent</option>
-            <option value="pocketmine\\event\\player\\PlayerQuitEvent">PlayerQuitEvent</option>
-            <option value="pocketmine\\event\\player\\PlayerChatEvent">PlayerChatEvent</option>
-            <option value="pocketmine\\event\\block\\BlockBreakEvent">BlockBreakEvent</option>
-            <option value="pocketmine\\event\\block\\BlockPlaceEvent">BlockPlaceEvent</option>
-        </select>
 
         <label for="license">Lisensi:</label>
         <select id="license" name="license">
