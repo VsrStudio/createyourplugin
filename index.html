@@ -47,7 +47,11 @@
         <input type="text" id="version" name="version" required>
 
         <label for="apiVersion">API Version:</label>
-        <input type="text" id="apiVersion" name="apiVersion" required>
+        <select id="apiVersion" name="apiVersion" required>
+            <option value="5.0.0">5.0.0</option>
+            <option value="4.0.0">4.0.0</option>
+            <option value="3.0.0">3.0.0</option>
+        </select>
 
         <label for="namespace">Namespace (Opsional):</label>
         <input type="text" id="namespace" name="namespace">
@@ -61,11 +65,22 @@
         <label for="dependencies">Dependencies (pisahkan dengan koma):</label>
         <input type="text" id="dependencies" name="dependencies">
 
-        <label for="events">Event Listener (pisahkan dengan baris baru, contoh: pocketmine\\event\\player\\PlayerJoinEvent):</label>
-        <textarea id="events" name="events" rows="4"></textarea>
+        <label for="events">Event Listener:</label>
+        <select id="events" name="events[]" multiple>
+            <option value="pocketmine\\event\\player\\PlayerJoinEvent">PlayerJoinEvent</option>
+            <option value="pocketmine\\event\\player\\PlayerQuitEvent">PlayerQuitEvent</option>
+            <option value="pocketmine\\event\\player\\PlayerChatEvent">PlayerChatEvent</option>
+            <option value="pocketmine\\event\\block\\BlockBreakEvent">BlockBreakEvent</option>
+            <option value="pocketmine\\event\\block\\BlockPlaceEvent">BlockPlaceEvent</option>
+        </select>
 
         <label for="license">Lisensi:</label>
-        <input type="text" id="license" name="license">
+        <select id="license" name="license">
+            <option value="MIT">MIT</option>
+            <option value="GPL-3.0">GPL-3.0</option>
+            <option value="Apache-2.0">Apache-2.0</option>
+            <option value="Proprietary">Proprietary</option>
+        </select>
 
         <label for="icon">Unggah Ikon (PNG):</label>
         <input type="file" id="icon" name="icon" accept="image/png">
